@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sablona.Entity;
+using Sablona.Framy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,14 @@ namespace Sablona
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static List<User> user = new List<User>();
         public MainWindow()
         {
             InitializeComponent();
+            user.Add(new User() { ID = 1, Name = "Martin", Login = "user", Password = "user" });
+            user.Add(new User() { ID = 2, Name = "Martin2", Login = "user2", Password = "user2" });
+            BackEnd.frame = frame;
+            //BackEnd.frame.Navigate();
         }
     }
 }

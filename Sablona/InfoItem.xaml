@@ -1,0 +1,31 @@
+﻿<Page x:Class="Sablona.InfoItem"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sablona"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="500"
+      Title="InfoItem">
+
+    <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="79*"/>
+        <RowDefinition Height="35*"/>
+        <RowDefinition Height="35*"/>
+        <RowDefinition Height="35*"/>
+        <RowDefinition Height="35*"/>
+        <RowDefinition Height="91*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="backintime" Click="backintime_Click" Content="Zpět" Width="100" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top"/>
+        <Label x:Name="ItemID" Content="ID :" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" ></Label>
+        <Label x:Name="Itemname2" Content="Nazev :" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" ></Label>
+        <Label x:Name="Itemid" Grid.Row="1" Grid.Column="1" Width="150" ></Label>
+        <Label x:Name="Itemnazev" Grid.Row="2" Grid.Column="1" Width="150"></Label>
+        <Button x:Name="Buyitem" Content="Přidat do košíku" Grid.Row="5" Grid.Column="1" Width="150" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Buyitem_Click"  />
+    </Grid>
+</Page>
