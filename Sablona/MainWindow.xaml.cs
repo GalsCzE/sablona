@@ -29,7 +29,7 @@ namespace Sablona
             user.Add(new User() { ID = 1, Name = "Martin", Login = "user", Password = "user" });
             user.Add(new User() { ID = 2, Name = "Martin2", Login = "user2", Password = "user2" });
             BackEnd.frame = frame;
-            //BackEnd.frame.Navigate();
+            BackEnd.frame.Navigate(new Prihlaseni());
         }
     }
 }
